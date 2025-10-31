@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playlist da Min 🎧</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>💖 Playlist da Min 💖</h1>
+    <p>Adicione suas músicas favoritas e curta o som! 🎶</p>
+  </header>
+
+  <main>
+    <div class="player">
+      <img id="cover" src="/imagens/hqdefault.jpg" alt="Capa da música" />
+      <h2 id="title">Escolha uma música 🎵</h2>
+      <audio id="audio" controls></audio>
+      <div class="controls">
+        <button id="prev">⏮️</button>
+        <button id="play">▶️</button>
+        <button id="next">⏭️</button>
+      </div>
+    </div>
+
+    <section class="playlist">
+      <h3>🎵 Suas músicas 💫</h3>
+      <ul id="musicList"></ul>
+    </section>
+
+    <section class="add-music">
+      <h3>➕ Adicionar nova música</h3>
+      <form id="addMusicForm">
+        <input type="text" id="musicTitle" placeholder="Nome da música" required />
+        <input type="file" id="musicFile" accept="audio/*" required />
+        <input type="file" id="coverFile" accept="image/*" />
+        <button type="submit">Adicionar 🎶</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito com 💕 por alguém que gosta muito da Min 🎧</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
